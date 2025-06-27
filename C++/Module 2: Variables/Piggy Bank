@@ -1,0 +1,15 @@
+/* Write a 
+Preview: Docs Loading link description
+C++
+ program called currency.cpp that prompts the user for the amount of each foreign currency. Your prompts should look like:
+
+Enter number of Colombian Pesos:
+Enter number of Brazilian Reais:
+Enter number of Peruvian Soles:
+
+Copy to Clipboard
+
+Your program should then convert the amount entered by the user and display the total amount of USD. Your final output should look like:
+
+US Dollars = $______
+*/
