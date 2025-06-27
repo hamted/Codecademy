@@ -13,3 +13,32 @@ Your program should then convert the amount entered by the user and display the 
 
 US Dollars = $______
 */
+
+#include <iostream>
+
+int main() {
+  //the three concerned currencies
+  double pesos;
+  double reais;
+  double soles;
+
+  //amount in dollars
+  double dollars;
+
+//Asking for and saving the amounts of the currencies
+
+std::cout << "Enter number of Colombian Pesos: \n";
+std::cin >> pesos;
+std::cout << "Enter number of Brazilian Reais: \n";
+std::cin >> reais;
+std::cout << "Enter number of Peruvian Soles: \n";
+std::cin >> soles;
+
+//1 Colombian Peso = 0.00024
+//1 Brazilian Reais = 0.18
+//1 Peruvian Soles = 0.28
+  
+  dollars = (0.00024 * pesos) + (0.18 * reais) + (0.28 * soles);
+
+  std::cout << "US Dollars = $" << dollars << "\n";
+}
