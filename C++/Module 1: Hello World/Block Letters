@@ -1,0 +1,14 @@
+/*
+Write a C++ program called initials.cpp that displays the initials of your name in block letters as shown:
+*/
+//Fun fact: I'm in Electrical engineerin' :)
+#include <iostream>
+int main(){
+  std::cout << "H   H M     M\n";
+  std::cout << "H   H MM   MM\n";
+  std::cout << "H   H MM   MM\n";
+  std::cout << "HHHHH M  M  M\n";
+  std::cout << "H   H M     M\n";
+  std::cout << "H   H M     M\n";
+  std::cout << "H   H M     M\n";
+}
