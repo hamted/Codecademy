@@ -1,1 +1,29 @@
+//Write a C++ program called quadratic.cpp that solves the quadratic equation for the x's 
+
+#include <iostream>
+#include <cmath>
+
+int main() {
+  //Declaring the 3 variables a, b,c for the quadratic formula
+  double a;
+  double b;
+  double c;
+//Output prompt for user to save values into the variables
+std::cout << "Enter a: \n";
+std::cin >> a;
+std::cout << "Enter b: \n";
+std::cin >> b;
+std::cout << "Enter c: \n";
+std::cin >> c;
+
+//Variables to store the two roots
+double root1;
+double root2;
+
+root1 = ((-b)+(std::sqrt((b*b)-(4*a*c))))/(2*a);
+root2 = ((-b)-(std::sqrt((b*b)-(4*a*c))))/(2*a);
+
+std::cout << "Root 1 is " << root1 << "\n";
+std::cout << "Root 2 is " << root2 << "\n";
+}
 
