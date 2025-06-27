@@ -1,1 +1,27 @@
+#include <iostream>
 
+int main() {
+  //My imaginary dog is 5 years old
+  int dog_age = 5;
+  //Dog's first 2 years
+  int early_years;
+  //Years after the first 2
+  int later_years;
+  //Dog's total human years
+  double human_years;
+
+  //First 2 years of a dog's life count as 21 human years
+  early_years = 21;
+
+  //Each following year counts as 4 human years
+  later_years = (dog_age -2) * 4;
+  //The sum of the early years and later years gives the value in human years
+    human_years = early_years + later_years;
+  
+
+ 
+
+  //Output dog profile
+  std::cout << "My name is Dolly! Ruff ruff, I am " << human_years << " years old in human years. \n";
+  
+}
