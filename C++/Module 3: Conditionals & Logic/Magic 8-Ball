@@ -10,7 +10,8 @@ int main(){
   std::cout << "MAGIC 8-BALL: \n";
   int answer = std::rand() % 10;
   //std::cout << answer;
-
+  
+// Output a random Magic 8-Ball response based on the random number
   if(answer == 0){
     std::cout << "It is certain.\n";
   }else if(answer == 1) {
