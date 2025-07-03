@@ -79,31 +79,31 @@ int main(){
     }else if((user == 3) && (computer == 3)){
       std::cout << "Tie!\n";
     }else if ((user == 3) && (computer == 4)){
-      std::cout << "Scissors cuts Paper. \n You win!\n";
+      std::cout << "Scissors decapitate Lizard. \n You win!\n";
     }else if((user == 3) && (computer == 5)){
-      std::cout << "Tie!\n";
+      std::cout << "Spock smashes Scissors. \n Computer wins! \n";
 
       //Lizard
     if ((user == 4) && (computer == 1)){
-      std::cout << "Rock crushes Scissors. \n Computer wins!\n";
+      std::cout << "Rock crushes Lizard. \n Computer wins!\n";
     }else if ((user == 4) && (computer == 2)){
-      std::cout << "Scissors cuts Paper. \n You win!\n";
+      std::cout << "Lizard eats Paper. \n You win!\n";
     }else if((user == 4) && (computer == 3)){
-      std::cout << "Tie!\n";
+      std::cout << "Scissors decapitate Lizard.\n Computer wins!";
     }else if ((user == 4) && (computer == 4)){
       std::cout << "Tie!\n";
     }else if((user == 4) && (computer == 5)){
-      std::cout << "Tie!\n";
+      std::cout << "Lizard poisons Spock. \n You win!\n";
 
       //Spock
     if ((user == 5) && (computer == 1)){
-      std::cout << "Rock crushes Scissors. \n Computer wins!\n";
+      std::cout << "Spock vaporizes Rock. \n You win!\n";
     }else if ((user == 5) && (computer == 2)){
-      std::cout << "Scissors cuts Paper. \n You win!\n";
+      std::cout << "Paper disproves Spock. \n Computer wins!\n";
     }else if((user == 5) && (computer == 3)){
-      std::cout << "Tie!\n";
+      std::cout << "Spock smashes Scissors. \n You win!\n";
     }else if ((user == 5) && (computer == 4)){
-      std::cout << "Scissors cuts Paper. \n You win!\n";
+      std::cout << "Lizard poisons Spock. \n Computer wins!\n";
     }else if((user == 5) && (computer == 5)){
       std::cout << "Tie!\n";
   }
