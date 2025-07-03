@@ -45,6 +45,8 @@ int main(){
   //Colllect and store user input
   std::cin >> user;
 
+  std::cout << "Computer chose: " << computer << "\n";
+
   //Rock
   if ((user == 1) && (computer == 1)){
     std::cout << "Tie!\n";
