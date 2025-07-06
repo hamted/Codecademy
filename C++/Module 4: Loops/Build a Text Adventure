@@ -12,4 +12,28 @@ Create a C++ text adventure with the storyline of your choosing.
 The program should use your knowledge of C++ conditionals, logic, and loops.
 */
 
-//To be honest just making this up as I go
+/*To be honest just making this up as I go
+It says to use a paper but I don't have an active storyline so I'll update here as I make it.
+Beginning, welcomes, asks for name. Generates a random number to choose between two storylines.
+This means that each story is going to have it's own different codes.
+I already committed so there is no going back, let's see how this goes...
+*/
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+int main(){
+  srand(time(NULL));
+  //Welcome section
+  std::cout << "Hi there, what's your name? \n";
+  std::string name;
+  std::cin >> name;
+  std::cout << "Welcome " << name << " to a simple game of clue! \n";
+
+  //Random story gen
+  int storyLine = (rand() % 2) + 1;
+
+  //StoryLine 1
+
+  
+}
