@@ -17,6 +17,9 @@ It says to use a paper but I don't have an active storyline so I'll update here 
 Beginning, welcomes, asks for name. Generates a random number to choose between two storylines.
 This means that each story is going to have it's own different codes.
 I already committed so there is no going back, let's see how this goes...
+
+-Actually, no I will be axing the randomisation, I thought about it and I think it's better if I focus on one and really build on it
+
 */
 
 #include <iostream>
@@ -30,8 +33,8 @@ int main(){
   std::cin >> name;
   std::cout << "Welcome " << name << " to a simple game of clue! \n";
 
-  //Random story gen
-  int storyLine = (rand() % 2) + 1;
+ /* //Random story gen
+  int storyLine = (rand() % 2) + 1; */
 
   //StoryLine 1
 
