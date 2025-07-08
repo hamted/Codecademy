@@ -40,8 +40,20 @@ int main(){
   std::cout << ("Welcome, Detective. Daniel Hargreaves has been murdered...\n");
 
   //Branch Point 1: Who to question
-  std::cout << ("Who do you question first? \n");
-  std::cout << (" 1) Lila \n 2) Charles \n 3) Mara \n");
+  int choice1;
+  while(choice1 != 1 && choice1 != 2 && choice1 != 3){
+    std::cout << ("Who do you question first? \n");
+    std::cout << (" 1) Lila \n 2) Charles \n 3) Mara \n");
+    std::cin >> choice 1;
+  }
+
+  if (choice1 == 1){
+    std::cout << ("Lila says she was in the greenhouse...\n");
+  }else if (choice1 == 2){
+    std::cout << ("Charles says he was in the library...\n");
+  }else {
+    std::cout << ("Mara says she saw someone heading to the study...");
+  }
 
   
 }
