@@ -34,9 +34,14 @@ int main(){
   std::cout << "Welcome " << name << " to a simple game of clue! \n";
 
  /* //Random story gen
-  int storyLine = (rand() % 2) + 1; */
+  int storyLine = (rand() % 2) + 1;*/
 
-  //StoryLine 1
+  //Introduction
+  std::cout << ("Welcome, Detective. Daniel Hargreaves has been murdered...\n");
+
+  //Branch Point 1: Who to question
+  std::cout << ("Who do you question first? \n");
+  std::cout << (" 1) Lila \n 2) Charles \n 3) Mara \n");
 
   
 }
