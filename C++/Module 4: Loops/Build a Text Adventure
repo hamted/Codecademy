@@ -25,19 +25,21 @@ I already committed so there is no going back, let's see how this goes...
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cctype>
 int main(){
-  srand(time(NULL));
+  //srand(time(NULL));
+  std::string playAgain;
+  do{
   //Welcome section
   std::cout << "Hi there, what's your name? \n";
   std::string name;
   std::cin >> name;
-  std::cout << "Welcome " << name << " to a simple game of clue! \n";
 
  /* //Random story gen
   int storyLine = (rand() % 2) + 1;*/
 
   //Introduction
-  std::cout << ("Welcome, Detective. Daniel Hargreaves has been murdered...\n");
+  std::cout << ("Welcome, Detective ") << name << (". Daniel Hargreaves has been murdered...\n");
 
   //Branch Point 1: Who to question
   int choice1;
@@ -55,5 +57,53 @@ int main(){
     std::cout << ("Mara says she saw someone heading to the study...");
   }
 
+  //Branch Point 2: Investigation
+  int choice2;
+   while(choice2 != 1 && choice2 != 2 && choice2 != 3){
+    std::cout << ("Where do you want to investigate? \n");
+    std::cout << (" 1) Greenhouse \n 2) Library \n 3) Study \n");
+    std::cin >> choice2;
+   }
+
+    if (choice2 == 1) {
+        std::cout << ("You find a piece of scarf in the greenhouse...\n");
+    } else if (choice2 == 2) {
+        std::cout << ("A lipstick-marked glass is found in the library...\n");
+    } else {
+        std::cout << ("A threatening letter is hidden in the study...\n");
+    }
+
+    //Branch Point 3: Accusation
+     int choice3;
+   while(choice3 != 1 && choice3 != 2 && choice3 != 3){
+    std::cout << ("Who do you accuse? \n");
+    std::cout << (" 1) Lila \n 2) Charles \n 3) Mara \n");
+    std::cin >> choice3;
+   }
+
+   if (choice3 == 1) {
+      std::cout << ("Lila is arrested. But later, Charles kills again...\n");
+      std::cout << ("ENDING: You made a fatal mistake.\n");
+    } else if (choice3 == 2) {
+      std::cout << ("Charles confesses in anger. Justice is served.\n");
+      std::cout << ("ENDING: You solved the case.\n");
+    } else {
+      std::cout << ("Mara breaks down. She was blackmailed for years.\n");
+      std::cout << ("ENDING: A quiet confession.\n");
+    }
+//Replay Option
+while(playAgain != "Yes" && playAgain != "No"){
+  std::cout << ("Would you like to play again? (Yes/No)\n");
+  std::cin >> playAgain;
+  playAgain[0] = toupper(playAgain[0]);
+}
+
+if(playAgain == "Yes"){
+  std::cout << "Starting new game...\n";
+}
+  } while (playAgain == "Yes");
   
+  std::cout << "Thanks for playing!\n";
+
+  return 0;  
 }
